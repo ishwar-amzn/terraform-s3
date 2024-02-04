@@ -6,7 +6,7 @@ resource "aws_s3_bucket" "example" {
 terraform {
   backend "s3" {
     bucket         = "lacp-managed-remote-backend"
-    key            = "/jenkins/s3/terraform.tfstate"
+    key            = "jenkins/s3/terraform.tfstate"
     region         = "us-east-1" # Change this to your desired region
     #dynamodb_table = "terraform_locks" # Optional: DynamoDB table for state locking
 
