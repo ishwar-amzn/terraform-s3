@@ -8,7 +8,7 @@ terraform {
     bucket         = "lacp-managed-remote-backend"
     key            = "jenkins/s3/terraform.tfstate"
     region         = "us-east-1" # Change this to your desired region
-    #dynamodb_table = "terraform_locks" # Optional: DynamoDB table for state locking
+    ##dynamodb_table = "terraform_locks" # Optional: DynamoDB table for state locking
 
     encrypt        = true # Optional: Encrypt the state file at rest
     #kms_key_id     = "your-kms-key-id" # Optional: KMS key ARN for S3 server-side encryption
